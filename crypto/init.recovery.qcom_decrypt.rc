@@ -33,6 +33,13 @@ on property:sys.listeners.registered=true && property:keymaster_ver=4.1
     start keymaster-4-1-qti
     start keymaster-4-1-citadel
 
+on property:sys.listeners.registered=true && property:keymaster_ver=4.x
+    start keymaster-4-0
+    start keymaster-4-0-qti
+    start keymaster-4-1
+    start keymaster-4-1-qti
+    start keymaster-4-1-citadel
+
 on property:vendor.sys.listeners.registered=true && property:keymaster_ver=3.0
     start keymaster-3-0
     start keymaster-3-0-qti
@@ -42,6 +49,13 @@ on property:vendor.sys.listeners.registered=true && property:keymaster_ver=4.0
     start keymaster-4-0-qti
 
 on property:vendor.sys.listeners.registered=true && property:keymaster_ver=4.1
+    start keymaster-4-1
+    start keymaster-4-1-qti
+    start keymaster-4-1-citadel
+
+on property:vendor.sys.listeners.registered=true && property:keymaster_ver=4.x
+    start keymaster-4-0
+    start keymaster-4-0-qti
     start keymaster-4-1
     start keymaster-4-1-qti
     start keymaster-4-1-citadel
